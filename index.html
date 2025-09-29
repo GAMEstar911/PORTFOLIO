@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elvis Kiplangat - Software Engineering Student Portfolio">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" type="image/png" href="favicon.jpg">
+</head>
+
+<body>
+  <!-- Navbar header section -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <h2 class="logo-heading">ELVIS KIPLANGAT</h2>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars hamburger-icon"></i>
+        <i class="fas fa-times cross-icon"></i>
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="menu-list-items">
+            <a class="links" href="#home">Home</a>
+          </li>
+          <li class="menu-list-items">
+            <a class="links" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="menu-list-items">
+            <a class="links" href="#about">About</a>
+          </li>
+          <li class="menu-list-items">
+            <a class="links" href="#services">Services</a>
+          </li>
+          <li class="menu-list-items">
+            <a class="links" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main hero banner -->
+  <section id="home" class="hero">
+    <div class="intro">
+      <div class="hero-content">
+        <div class="headings">
+          <h3 class="greet-heading">Hello, I'm</h3>
+          <h1 class="my-heading">ELVIS KIPLANGAT</h1>
+          <h4 class="sub-heading">A Software Engineering student</h4>
+        </div>
+      </div>
+      <div class="intro-buttons">
+        <button class="btn common-btn">Hire Me</button>
+        <button class="btn ghost-btn">Get Resume</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+   <div class="portfolio-heading">
+      <h2 class="my-heading text-center">Featured Specialization</h2>
+    </div>
+  <section class="hero" id="portfolio">
+    <div class="carousel">
+      <img id="carouselImage" src="img1.jpg" alt="Featured Specialization">
+      <div class="text">
+        <h3 id="carouselTitle">Python & Flask Development</h3>
+        <p id="carouselDesc">Backend Design.</p>
+      </div>
+      <div class="controls">
+        <button id="prevBtn">&#9664;</button>
+        <button id="pauseBtn">&#10074;&#10074;</button>
+        <button id="nextBtn">&#9654;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2 class="my-heading">About Me</h2>
+      <p class="lead-para">
+        My name is <b>ELVIS KIPLANGAT</b>, a <b>Software Engineering student</b> at Kirinyaga University in Kenya
+        with a passion for building practical, scalable software solutions.
+        I specialize in Python and Flask, creating APIs and chatbots that integrate services such as
+        OpenWeatherMap, OpenAI, and Telegram.
+      </p>
+      <p>
+        With experience in SQL, Docker, and ethical hacking tools on Kali Linux,
+        I am continuously exploring the intersections of software development and cybersecurity.
+        I speak Swahili and English, and I’m currently developing my personal portfolio website to showcase my projects and skills.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="ppicture.jpg" alt="Elvis Kiplangat Picture" width="200" height="200">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="services-heading">
+      <h2 class="my-heading text-center">My Services</h2>
+    </div>
+    <div class="services-content">
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="greet-heading blue-text">Python & Flask Development</h3>
+            <p class="small-para">
+              I build web applications and APIs using Python and Flask, focusing on clean architecture,
+              performance, and scalability.
+            </p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="greet-heading blue-text">API Integration</h3>
+            <p class="small-para">
+              I integrate third-party services such as OpenWeatherMap, OpenAI, and Telegram into applications
+              to deliver seamless functionality.
+            </p>
+            <p class="small-para">
+              API integration involves connecting different applications and services to work together,
+              allowing for data exchange and enhanced functionality.
+            </p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="greet-heading blue-text">Cybersecurity & Ethical Hacking</h3>
+            <p class="small-para">
+              Cybersecurity involves protecting systems, networks, and programs from digital attacks.
+              Ethical hacking is the practice of intentionally probing systems for vulnerabilities
+              to fix them before they can be exploited by malicious actors.
+            </p>
+            <p class="small-para">
+              I actively learn and practice ethical hacking tools on Kali Linux to enhance security awareness
+              and protect web applications from vulnerabilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact me section -->
+  <section class="contact" id="contact">
+    <div class="contact-heading">
+      <h2 class="my-heading text-center"><u>Contact Me</u></h2>
+    </div>
+    <div class="contact-content">
+      <div class="contact-form-container">
+        <h3 class="greet-heading">Get In Touch</h3>
+        <form class="contact-form">
+          <input class="form-controls" type="text" name="name" placeholder="Your Name">
+          <input class="form-controls" type="email" name="email" placeholder="Your Email">
+          <input class="form-controls" type="text" name="phone" placeholder="Your Phone">
+          <textarea class="form-controls" name="message" placeholder="Write your message" cols="30" rows="10"></textarea>
+          <input class="form-btn btn common-btn" type="submit" value="Send Message">
+        </form>
+      </div>
+      <div class="divider"></div>
+      <div class="contact-details">
+        <h3 class="greet-heading">My Contact Details</h3>
+        <div class="details">
+          <h5 class="contact-heading">EMAIL</h5>
+          <p class="contact-text">elviskiplangat52@gmail.com</p>
+        </div>
+        <div class="details">
+          <h5 class="contact-heading">PHONE</h5>
+          <p class="contact-text">+254 768033737</p>
+        </div>
+        <div class="details">
+          <h5 class="contact-heading">ADDRESS</h5>
+          <p class="contact-text">P.O BOX 335, KIRINYAGA, KENYA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="footer-content text-center">
+      <h4>
+        Copyright © 2025 All rights reserved |
+        This portfolio is created by ELVIS KIPLANGAT.
+      </h4>
+      <div class="social-links">
+        <div class="footer-menu">
+          <ul class="footer-menu-list">
+            <li class="footer-list-items">
+              <a class="footer-links" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="footer-list-items">
+              <a class="footer-links" href="https://instagram.com/yourusername">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="footer-list-items">
+              <a class="footer-links"
+                href="https://www.linkedin.com/in/elvis-kiplangat-88b330326">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="footer-list-items">
+              <a class="footer-links" href="https://wa.me/+254768033737">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li class="footer-list-items">
+              <a class="footer-links" href="https://github.com/GAMEstar911">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.querySelector('.menu');
+    hamburger.addEventListener('click', function () {
+      const hamIcon = this.querySelector('.hamburger-icon');
+      const crossIcon = this.querySelector('.cross-icon');
+      if (hamIcon.style.display === "none") {
+        hamIcon.style.display = "inline-block";
+        menu.style.display = "none";
+        crossIcon.style.display = "none";
+      } else {
+        crossIcon.style.display = "inline-block";
+        hamIcon.style.display = "none";
+        menu.style.display = "block";
+      }
+    });
+
+    const items = [
+      { img: 'code.png', title: 'Python & Flask Development', desc: 'Backend Design.' },
+      { img: 'hacker.webp', title: 'API Integration', desc: 'Development.' },
+      { img: 'background.jpg', title: 'Cybersecurity & Ethical Hacking', desc: 'Red Hat Trainee.' },
+    ];
+
+    let index = 0;
+    let playing = true;
+    let interval;
+
+    const imageEl = document.getElementById('carouselImage');
+    const titleEl = document.getElementById('carouselTitle');
+    const descEl = document.getElementById('carouselDesc');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const pauseBtn = document.getElementById('pauseBtn');
+
+    function showItem(i) {
+      imageEl.src = items[i].img;
+      imageEl.alt = items[i].title;
+      titleEl.textContent = items[i].title;
+      descEl.textContent = items[i].desc;
+    }
+
+    function nextItem() {
+      index = (index + 1) % items.length;
+      showItem(index);
+    }
+
+    function prevItem() {
+      index = (index - 1 + items.length) % items.length;
+      showItem(index);
+    }
+
+    function startAuto() {
+      interval = setInterval(nextItem, 4000);
+    }
+
+    function stopAuto() {
+      clearInterval(interval);
+    }
+
+    nextBtn.addEventListener('click', nextItem);
+    prevBtn.addEventListener('click', prevItem);
+
+    pauseBtn.addEventListener('click', () => {
+      if (playing) {
+        stopAuto();
+        pauseBtn.innerHTML = '&#9654;';
+      } else {
+        startAuto();
+        pauseBtn.innerHTML = '&#10074;&#10074;';
+      }
+      playing = !playing;
+    });
+
+    showItem(index);
+    startAuto();
+  </script>
+</body>
+</html>

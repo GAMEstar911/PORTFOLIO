@@ -72,3 +72,45 @@
 
     showItem(index);
     startAuto();
+const form = document.querySelector(".contact-form");
+const status = document.getElementById("form-status");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  const data = new FormData(event.target);
+  
+  // Show a "Sending..." state
+  status.style.display = "block";
+  status.style.backgroundColor = "#e2e8f0";
+  status.style.color = "#475569";
+  status.innerHTML = "Sending your message...";
+
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      status.style.backgroundColor = "#d1fae5"; // Light green
+      status.style.color = "#065f46";           // Dark green
+      status.innerHTML = "Thanks! Your message has been sent successfully.";
+      form.reset(); // Clears the form fields
+    } else {
+      response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+        } else {
+          status.innerHTML = "Oops! There was a problem submitting your form.";
+        }
+      })
+    }
+  }).catch(error => {
+    status.style.backgroundColor = "#fee2e2"; // Light red
+    status.style.color = "#991b1b";           // Dark red
+    status.innerHTML = "Oops! There was a problem connecting to the server.";
+  });
+}
+
+form.addEventListener("submit", handleSubmit);

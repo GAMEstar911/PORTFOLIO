@@ -10,8 +10,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="icon" type="image/png" href="favicon.jpg">
+  <link rel="icon" type="image/png" href="logo.svg">
 </head>
 
 <body>
@@ -57,10 +56,12 @@
           <h4 class="sub-heading">A Software Engineering student</h4>
         </div>
       </div>
-      <div class="intro-buttons">
-        <button class="btn common-btn">Hire Me</button>
-        <button class="btn ghost-btn">Get Resume</button>
-      </div>
+        <a href="assets/Elvis_Kiplangat_Software_Engineering_Attachment_CV.pdf"
+   class="btn resume-btn"
+   target="_blank">
+   Get Resume
+</a>
+
     </div>
   </section>
 
@@ -100,7 +101,7 @@
       </p>
     </div>
     <div class="about-image">
-      <img src="ppicture.jpg" alt="Elvis Kiplangat Picture" width="200" height="200">
+      <img src="ppicture.jpeg" alt="Elvis Kiplangat Picture" width="200" height="200">
     </div>
   </section>
 
@@ -123,22 +124,7 @@
             </p>
           </div>
         </div>
-        <div class="my-col">
-          <div class="my-card">
-            <div class="icon">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <h3 class="greet-heading blue-text">API Integration</h3>
-            <p class="small-para">
-              I integrate third-party services such as OpenWeatherMap, OpenAI, and Telegram into applications
-              to deliver seamless functionality.
-            </p>
-            <p class="small-para">
-              API integration involves connecting different applications and services to work together,
-              allowing for data exchange and enhanced functionality.
-            </p>
-          </div>
-        </div>
+        
         <div class="my-col">
           <div class="my-card">
             <div class="icon">
@@ -156,6 +142,23 @@
             </p>
           </div>
         </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="greet-heading blue-text">Machine Learning</h3>
+            <p class="small-para">
+              I have a strong foundation in Machine Learning (ML), with experience in building predictive models and applying data-driven solutions to real-world problems. 
+              My skills include data preprocessing, feature engineering, model selection, and evaluation, enabling me to derive meaningful insights from complex datasets.
+            </p>
+            <p class="small-para">
+              I am proficient in popular ML frameworks and libraries such as scikit-learn,
+               TensorFlow, and PyTorch, and I have hands-on experience with both supervised and unsupervised learning techniques, 
+               including regression, classification, clustering, and dimensionality reduction.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -166,19 +169,20 @@
       <h2 class="my-heading text-center"><u>Contact Me</u></h2>
     </div>
     <div class="contact-content">
-      <div class="contact-form-container">
+      <div class="contact-form-form-container">
         <h3 class="greet-heading">Get In Touch</h3>
-        <form class="contact-form">
-          <input class="form-controls" type="text" name="name" placeholder="Your Name">
-          <input class="form-controls" type="email" name="email" placeholder="Your Email">
-          <input class="form-controls" type="text" name="phone" placeholder="Your Phone">
-          <textarea class="form-controls" name="message" placeholder="Write your message" cols="30" rows="10"></textarea>
-          <input class="form-btn btn common-btn" type="submit" value="Send Message">
-        </form>
+         <div id="form-status"></div>
+         <form action="https://formspree.io/f/xgvnkjdz" method="POST" class="contact-form">
+           <input type="text" name="name" placeholder="Your Name" class="form-controls" required>
+           <input type="email" name="email" placeholder="Your Email" class="form-controls" required>
+           <input type="tel" name="phone" placeholder="Your Phone" class="form-controls">
+           <textarea name="message" placeholder="Write your message" class="form-controls" rows="5" required></textarea>
+           <button type="submit" class="myButton">Send Message</button>
+          </form>
       </div>
       <div class="divider"></div>
       <div class="contact-details">
-        <h3 class="greet-heading">My Contact Details</h3>
+        <h3 class="greet-heading"><u>My Contact Details</u></h3>
         <div class="details">
           <h5 class="contact-heading">EMAIL</h5>
           <p class="contact-text">elviskiplangat52@gmail.com</p>
@@ -205,31 +209,34 @@
       <div class="social-links">
         <div class="footer-menu">
           <ul class="footer-menu-list">
-            <li class="footer-list-items">
-              <a class="footer-links" href="#">
-                <i class="fab fa-twitter"></i>
+           <li class="footer-list-items x-social">
+             <a class="footer-links" href="https://x.com/kiplangat_15035">
+               <i class="fa-brands fa-x-twitter"></i>
+             </a>
+           </li>
+  
+            <li class="footer-list-items instagram-social">
+              <a class="footer-links" href="https://instagram.com/its_gamer_035">
+               <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
-            <li class="footer-list-items">
-              <a class="footer-links" href="https://instagram.com/yourusername">
-                <i class="fab fa-instagram"></i>
+
+             <li class="footer-list-items linkedin-social">
+              <a class="footer-links" href="https://www.linkedin.com/in/elvis-kiplangat-88b330326">
+                <i class="fa-brands fa-linkedin-in"></i>
               </a>
             </li>
-            <li class="footer-list-items">
-              <a class="footer-links"
-                href="https://www.linkedin.com/in/elvis-kiplangat-88b330326">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li class="footer-list-items">
+
+            <li class="footer-list-items whatsapp-social">
               <a class="footer-links" href="https://wa.me/+254768033737">
-                <i class="fab fa-whatsapp"></i>
+                <i class="fa-brands fa-whatsapp"></i>
               </a>
             </li>
-            <li class="footer-list-items">
+  
+            <li class="footer-list-items github-social">
               <a class="footer-links" href="https://github.com/GAMEstar911">
-                <i class="fab fa-github"></i>
-              </a>
+                <i class="fa-brands fa-github"></i>
+               </a>
             </li>
           </ul>
         </div>
@@ -316,6 +323,48 @@
 
     showItem(index);
     startAuto();
+    const form = document.querySelector(".contact-form");
+const status = document.getElementById("form-status");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  const data = new FormData(event.target);
+  
+  // Show a "Sending..." state
+  status.style.display = "block";
+  status.style.backgroundColor = "#e2e8f0";
+  status.style.color = "#475569";
+  status.innerHTML = "Sending your message...";
+
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      status.style.backgroundColor = "#d1fae5"; // Light green
+      status.style.color = "#065f46";           // Dark green
+      status.innerHTML = "Thanks! Your message has been sent successfully.";
+      form.reset(); // Clears the form fields
+    } else {
+      response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+        } else {
+          status.innerHTML = "Oops! There was a problem submitting your form.";
+        }
+      })
+    }
+  }).catch(error => {
+    status.style.backgroundColor = "#fee2e2"; // Light red
+    status.style.color = "#991b1b";           // Dark red
+    status.innerHTML = "Oops! There was a problem connecting to the server.";
+  });
+}
+
+form.addEventListener("submit", handleSubmit);
   </script>
 </body>
 </html>
